@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library by JMR</title>
+    <link rel="stylesheet" href="index.css">
+</head> 
+<body>
+    <h1  class = "card--header" >Library</h1>
+
+    <div>
+        <p>This project was developed using HMTL, CSS and JavaScript.</p>
+    </div>
+
+    <div class = "card">
+        <div id = "form-1">
+            <h2>Enter a new book to library</h2>
+
+            <span>Name of the book:</span>
+            <input type ="text" id = "bookNameField" required class = "form-input"><br><br>
+
+            <span>Name of the author:</span>
+            <input type ="text" id = "authorNameField" required class = "form-input"><br><br>
+
+            <span>Number of pages:</span>
+            <input type ="number" id = "numPagesField" min="0" class = "form-input"><br><br>
+
+            <span>I have read it</label>
+            <input type ="checkbox" id = "isReadField" required><br><br>
+
+            <div class="action"><button class="btn--alt" id="addButton" onclick="addButtonHandler()">Add</button></div>
+        </div>
+    </div>
+    <div id="bookContainer"></div>
+    <script src = "index.js"></script>
+</body>
+</html>
